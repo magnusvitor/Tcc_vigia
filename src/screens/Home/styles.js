@@ -1,170 +1,438 @@
-import { StyleSheet } from 'react-native';
+
+import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f6fa',
-    padding: 15
+    backgroundColor: "#F7F6FA",
+  },
+  contentContainer: {
+    paddingHorizontal: 20,
+    paddingTop: 18,
+    paddingBottom: 28,
+    maxWidth: 1100,
+    width: "100%",
+    alignSelf: "center",
   },
 
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: 15
+  topo: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 22,
   },
-
-  titulo: {
-    fontSize: 16,
-    fontWeight: 'bold'
+  marca: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 11,
   },
-
-  subtitulo: {
+  marcaIcone: {
+    width: 43,
+    height: 43,
+    borderRadius: 14,
+    backgroundColor: "#7259B8",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  marcaTitulo: {
+    color: "#292744",
+    fontSize: 17,
+    fontWeight: "700",
+  },
+  marcaSubtitulo: {
+    color: "#8A849C",
     fontSize: 12,
-    color: '#777'
+    marginTop: 3,
+  },
+  botaoTopo: {
+    width: 41,
+    height: 41,
+    borderRadius: 14,
+    backgroundColor: "#EEE8F8",
+    alignItems: "center",
+    justifyContent: "center",
   },
 
-  avatar: {
-    width: 35,
-    height: 35,
-    borderRadius: 50
+  banner: {
+    backgroundColor: "#29264B",
+    borderRadius: 23,
+    padding: 23,
+    minHeight: 210,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    overflow: "hidden",
+    marginBottom: 22,
   },
-
-  searchBox: {
-    flexDirection: 'row',
-    backgroundColor: '#fff',
-    padding: 10,
-    borderRadius: 10,
-    alignItems: 'center',
-    marginBottom: 15
+  bannerTexto: {
+    flex: 1,
+    paddingRight: 8,
+    zIndex: 2,
   },
-
-  input: {
-    marginLeft: 10,
-    flex: 1
+  etiqueta: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignSelf: "flex-start",
+    backgroundColor: "rgba(255,255,255,0.10)",
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 20,
+    marginBottom: 13,
   },
-
-  card: {
-    backgroundColor: '#fff',
+  pontoEtiqueta: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: "#C5B4F1",
+    marginRight: 7,
+  },
+  etiquetaTexto: {
+    color: "#E6DDF9",
+    fontSize: 9,
+    fontWeight: "700",
+    letterSpacing: 0.7,
+  },
+  bannerTitulo: {
+    color: "#FFFFFF",
+    fontSize: 25,
+    lineHeight: 31,
+    fontWeight: "800",
+    maxWidth: 390,
+  },
+  bannerDescricao: {
+    color: "#D0CCDF",
+    fontSize: 12,
+    lineHeight: 19,
+    marginTop: 9,
+    maxWidth: 350,
+  },
+  bannerBotao: {
+    marginTop: 17,
+    flexDirection: "row",
+    alignItems: "center",
+    alignSelf: "flex-start",
+    gap: 10,
+    backgroundColor: "#8971D3",
+    paddingHorizontal: 15,
+    paddingVertical: 11,
+    borderRadius: 11,
+  },
+  bannerBotaoTexto: {
+    color: "#FFFFFF",
+    fontSize: 12,
+    fontWeight: "700",
+  },
+  bannerIlustracao: {
+    width: 125,
+    height: 140,
+    alignItems: "center",
+    justifyContent: "center",
+    marginLeft: 8,
+  },
+  bannerCirculoExterno: {
+    width: 116,
+    height: 116,
+    borderRadius: 58,
+    backgroundColor: "rgba(183,163,235,0.12)",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  bannerCirculoInterno: {
+    width: 83,
+    height: 83,
+    borderRadius: 28,
+    backgroundColor: "#8971D3",
+    alignItems: "center",
+    justifyContent: "center",
+    transform: [{ rotate: "-7deg" }],
+  },
+  bannerSelo: {
+    position: "absolute",
+    right: 1,
+    bottom: 12,
+    width: 34,
+    height: 34,
     borderRadius: 12,
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  metricas: {
+    flexDirection: "row",
+    gap: 11,
+    marginBottom: 28,
+  },
+  metricaCard: {
+    flex: 1,
+    minWidth: 0,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 16,
+    padding: 13,
+    borderWidth: 1,
+    borderColor: "#EFEDF4",
+  },
+  metricaIcone: {
+    width: 34,
+    height: 34,
+    borderRadius: 11,
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 9,
+  },
+  metricaNumero: {
+    fontSize: 23,
+    fontWeight: "800",
+    color: "#292744",
+  },
+  metricaTitulo: {
+    color: "#48435E",
+    fontSize: 11,
+    fontWeight: "700",
+    marginTop: 3,
+  },
+  metricaLegenda: {
+    color: "#A09AAF",
+    fontSize: 10,
+    marginTop: 3,
+  },
+
+  secaoCabecalho: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 13,
+    marginTop: 1,
+  },
+  secaoCabecalhoTexto: {
+    flex: 1,
+  },
+  tituloSecao: {
+    fontSize: 18,
+    fontWeight: "800",
+    color: "#292744",
+  },
+  subtituloSecao: {
+    color: "#928CA2",
+    fontSize: 11,
+    marginTop: 4,
+    lineHeight: 16,
+  },
+
+  recursosLista: {
+    gap: 12,
+    paddingBottom: 5,
+    paddingRight: 3,
+    marginBottom: 25,
+  },
+  recursoCard: {
+    width: 205,
+    backgroundColor: "#FFFFFF",
+    borderWidth: 1,
+    borderColor: "#EFEDF4",
+    borderRadius: 17,
     padding: 15,
-    marginBottom: 12
+  },
+  recursoTopo: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 14,
+  },
+  recursoIcone: {
+    width: 43,
+    height: 43,
+    borderRadius: 13,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  recursoTitulo: {
+    color: "#302B49",
+    fontSize: 13,
+    fontWeight: "800",
+  },
+  recursoDescricao: {
+    color: "#918BA0",
+    fontSize: 11,
+    lineHeight: 16,
+    minHeight: 32,
+    marginTop: 5,
+  },
+  recursoRodape: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    marginTop: 12,
+    paddingTop: 10,
+    borderTopWidth: 1,
+    borderTopColor: "#F0EDF5",
+  },
+  recursoLink: {
+    color: "#7259B8",
+    fontSize: 11,
+    fontWeight: "700",
   },
 
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center'
+  verTodas: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
+    paddingVertical: 7,
+    paddingLeft: 8,
+  },
+  verTodasTexto: {
+    color: "#7259B8",
+    fontSize: 11,
+    fontWeight: "700",
   },
 
-  avatarSmall: {
+  lista: {
+    gap: 10,
+  },
+  denunciaCard: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 12,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "#EFEDF4",
+    padding: 13,
+  },
+  denunciaIcone: {
     width: 40,
     height: 40,
-    borderRadius: 50,
-    marginRight: 10
+    borderRadius: 13,
+    alignItems: "center",
+    justifyContent: "center",
   },
-
-  nome: {
-    fontWeight: 'bold'
+  denunciaConteudo: {
+    flex: 1,
+    minWidth: 0,
   },
-
-  pergunta: {
-    color: '#666'
+  denunciaCabecalho: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 7,
   },
-
-  actions: {
-    flexDirection: 'row',
-    marginTop: 10,
-    gap: 10
+  categoriaTag: {
+    paddingHorizontal: 9,
+    paddingVertical: 5,
+    borderRadius: 7,
+    maxWidth: "90%",
   },
-
-  btn: {
-    backgroundColor: '#6c63ff',
-    padding: 8,
-    borderRadius: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 5
+  categoriaTagTexto: {
+    fontSize: 9,
+    fontWeight: "800",
+    letterSpacing: 0.4,
   },
-
-  btnText: {
-    color: '#fff'
+  protocoloTexto: {
+    color: "#7259B8",
+    fontSize: 10,
+    fontWeight: "800",
+    letterSpacing: 0.3,
+    marginBottom: 5,
   },
-
-  btnOutline: {
-    borderWidth: 1,
-    borderColor: '#6c63ff',
-    padding: 8,
-    borderRadius: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 5
-  },
-
-  btnOutlineText: {
-    color: '#6c63ff'
-  },
-
-  local: {
+  denunciaDescricao: {
+    color: "#5E596F",
     fontSize: 12,
-    color: '#777'
+    lineHeight: 17,
+    marginBottom: 10,
   },
-
-  badge: {
-    marginLeft: 'auto',
-    backgroundColor: '#6c63ff',
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6
-  },
-
-  badgeText: {
-    color: '#fff',
-    fontSize: 10
-  },
-
-  tituloCard: {
-    marginTop: 10,
-    fontWeight: 'bold',
-    color: '#6c63ff'
-  },
-
-  desc: {
-    fontSize: 13,
+  infoLinha: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
     marginTop: 5,
-    color: '#555'
+    minWidth: 0,
+  },
+  infoTexto: {
+    color: "#777187",
+    fontSize: 10,
+    fontWeight: "600",
+  },
+  infoSeparador: {
+    width: 1,
+    height: 12,
+    backgroundColor: "#E7E2EF",
+    marginHorizontal: 3,
+  },
+  infoLocal: {
+    flex: 1,
+    minWidth: 0,
+    color: "#777187",
+    fontSize: 10,
+    fontWeight: "600",
   },
 
-  info: {
-    fontSize: 12,
-    color: '#777',
-    marginTop: 3
+  estado: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 10,
+    paddingVertical: 28,
   },
-
-  actionsBottom: {
-    flexDirection: 'row',
-    marginTop: 10,
-    gap: 10
+  estadoVazio: {
+    alignItems: "center",
+    backgroundColor: "#FFFFFF",
+    borderWidth: 1,
+    borderColor: "#EFEDF4",
+    borderRadius: 17,
+    paddingHorizontal: 22,
+    paddingVertical: 25,
   },
-
-  smallBtn: {
-    backgroundColor: '#eee',
-    padding: 6,
-    borderRadius: 6
+  estadoIcone: {
+    width: 48,
+    height: 48,
+    borderRadius: 16,
+    backgroundColor: "#EEE8F8",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 12,
   },
-
-  smallText: {
-    fontSize: 12
+  estadoTitulo: {
+    color: "#302B49",
+    fontSize: 14,
+    fontWeight: "800",
+    textAlign: "center",
   },
-
-  section: {
+  estadoTexto: {
+    color: "#928CA2",
+    fontSize: 11,
+    lineHeight: 17,
+    textAlign: "center",
+    marginTop: 6,
+  },
+  botaoRepetir: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 7,
+    backgroundColor: "#7259B8",
+    borderRadius: 10,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
     marginTop: 15,
-    fontWeight: 'bold'
+  },
+  botaoRepetirTexto: {
+    color: "#FFFFFF",
+    fontSize: 11,
+    fontWeight: "700",
   },
 
-  activity: {
-    backgroundColor: '#fff',
-    padding: 10,
-    borderRadius: 8,
-    marginTop: 5
-  }
+  rodape: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 7,
+    marginTop: 29,
+    paddingTop: 17,
+    borderTopWidth: 1,
+    borderTopColor: "#EDEAF2",
+  },
+  rodapeTexto: {
+    color: "#A5A0B2",
+    fontSize: 10,
+  },
 });

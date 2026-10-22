@@ -1,18 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/core';
 import styles from './styles';
 
 export default function Index({ navigation }) {
     return (
         <View style={styles.container}>
-            <View style={styles.header}>
-
-                <Text style={styles.headerTitle}>Emergência</Text>
-
-                <View style={styles.avatar} />
-            </View>
 
             <View style={styles.alertBox}>
                 <Ionicons name="warning" size={20} color="#a94442" />

@@ -47,12 +47,12 @@ export const styles = StyleSheet.create({
   },
 
   button: {
-    backgroundColor: '#6C63FF',
+    backgroundColor: '#8971d3',
     padding: 16,
     borderRadius: 14,
     alignItems: 'center',
     marginTop: 15,
-    shadowColor: '#6C63FF',
+    shadowColor: '#8971d3',
     shadowOpacity: 0.2,
     shadowRadius: 6,
     elevation: 3, 
@@ -113,7 +113,7 @@ export const styles = StyleSheet.create({
   },
 
   link: {
-    color: '#6C63FF',
+    color: '#8971d3',
     fontWeight: 'bold',
   },
 });
